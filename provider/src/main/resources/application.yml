@@ -1,0 +1,8 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #注册中心的地址
+
+spring:
+  application:
+    name: client #服务的名字
