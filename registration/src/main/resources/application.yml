@@ -2,7 +2,9 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    registry-fetch-interval-seconds: 1
   server:
-    enable-self-preservation: false
+    enable-self-preservation: false # 关闭保护机制
+
 server:
   port: 8761

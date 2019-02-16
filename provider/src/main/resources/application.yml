@@ -5,4 +5,7 @@ eureka:
 
 spring:
   application:
-    name: client #服务的名字
+    name: provider #服务的名字
+
+server:
+  port: 8081
