@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @Description :
  * @Date Create in 2019/2/16 21:37
  */
-@FeignClient("provider")
+@FeignClient(value = "provider", fallback = BreakerClient.class)
 public interface ConsumerClient {
 
-    @GetMapping("/hello")
+    @GetMapping(value = "/hello")
     String hello();
 }
