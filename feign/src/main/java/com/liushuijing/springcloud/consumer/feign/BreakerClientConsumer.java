@@ -1,4 +1,4 @@
-package com.liushuijing.springcloud.consumer;
+package com.liushuijing.springcloud.consumer.feign;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @Date Create in 2019/2/17 19:16
  */
 @Component
-public class BreakerClient implements ConsumerClient {
+public class BreakerClientConsumer implements ConsumerFeignClient {
     @Override
     public String hello() {
         return "sorry";

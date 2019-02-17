@@ -1,4 +1,4 @@
-package com.liushuijing.springcloud.consumer;
+package com.liushuijing.springcloud.consumer.feign;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date Create in 2019/2/16 21:40
  */
 @RestController
-public class ConsumerController {
+public class FeignController {
 
     @Autowired
-    private ConsumerClient consumerClient;
+    private ConsumerFeignClient consumerFeignClient;
 
     @GetMapping("hello")
     public String hello() {
-        return consumerClient.hello();
+        return consumerFeignClient.hello();
     }
 }
