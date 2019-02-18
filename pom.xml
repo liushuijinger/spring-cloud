@@ -12,6 +12,7 @@
         <module>registration</module>
         <module>provider</module>
         <module>feign</module>
+        <module>ribbon</module>
     </modules>
     <packaging>pom</packaging>
 
